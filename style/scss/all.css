@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
+body {
+  line-height: 1.5;
+  font-family: "Bruno Ace SC", cursive;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.p160 {
+  padding: 160px 0;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 32px;
+  align-items: center;
+  transition: ease-in-out 0.2s;
+}
+
+h2 {
+  font-size: 4em;
+}
+
+nav {
+  padding-top: 40px;
+}
+nav ul {
+  justify-content: space-between;
+}
+nav li {
+  max-width: 306px;
+}
+nav a {
+  color: #d1d1d1;
+  transition: ease-in-out 0.2s;
+}
+nav a:hover {
+  color: #00ffa3;
+}
+
+.header {
+  align-items: center;
+  padding: 72px 0;
+}
+.header img {
+  margin-right: 24px;
+}
+.header-content {
+  flex-direction: column;
+}
+.header p {
+  font-size: 4em;
+  color: white;
+}
+.header h1 {
+  font-size: 8em;
+  color: #00ffa3;
+  text-align: right;
+}
+.header .btn-white {
+  background-color: white;
+  color: black;
+  align-self: end;
+}
+.header .btn-white:hover {
+  background-color: #15161d;
+  color: #00ffa3;
+}
+
+.bg-img {
+  background-image: url("../../img/background-img.png");
+  background-size: cover;
+  color: white;
+}
+.bg-img h2 {
+  margin-bottom: 36px;
+}
+.bg-img p {
+  font-size: 1.5em;
+  margin-bottom: 32px;
+}
+.bg-img .deco img:nth-child(2) {
+  margin: 0 16px;
+}
+
+.introduction-text {
+  margin-right: 24px;
+}
+
+.introduction-img img:nth-child(2) {
+  margin: 0 24px;
+}
+
+.about {
+  justify-content: space-between;
+  align-items: center;
+}
+.about-list {
+  flex-wrap: wrap;
+}
+.about-list li {
+  max-width: 306px;
+  border: 1px solid #d1d1d1;
+  padding: 15px;
+  margin: 12px;
+}
+.about-list h3,
+.about-list span {
+  font-size: 1.25em;
+}
+.about-content {
+  max-width: 526px;
+}
+.about-content h2 {
+  margin-bottom: 36px;
+}
+.about-content p {
+  font-size: 1.5em;
+}
+
+.bg-liner {
+  background: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
+  padding: 96px 0;
+}
+.bg-liner .d-flex {
+  align-items: center;
+  justify-content: space-between;
+}
+.bg-liner h2 {
+  color: white;
+  margin-right: 16px;
+  align-items: center;
+}
+.bg-liner h2 span {
+  font-size: 100px;
+  color: white;
+}
+.bg-liner a {
+  width: 162px;
+  height: 162px;
+  background-image: url("../../img/discord.png");
+  background-size: cover;
+  display: inline-block;
+  font-size: 0;
+  border-radius: 40px;
+  transition: ease-in-out 0.5s;
+}
+.bg-liner a:nth-child(2) {
+  background-image: url("../../img/instagram.png");
+  margin: 0 20px;
+}
+.bg-liner a:nth-child(3) {
+  background-image: url("../../img/message.png");
+}
+.bg-liner a:hover {
+  box-shadow: 0px 0px 16px 3px rgba(144, 148, 255, 0.9), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.project h2 {
+  max-width: 746px;
+  margin-left: auto;
+  margin-bottom: 16px;
+}
+.project-img {
+  margin-right: 24px;
+}
+.project-card {
+  margin-bottom: 28px;
+}
+.project .btn-black {
+  background-color: black;
+  color: white;
+  justify-content: start;
+  display: inline-flex;
+  margin-top: 76px;
+}
+.project .btn-black:hover {
+  background-color: #15161d;
+  color: #00ffa3;
+}
+
+footer {
+  padding: 40px 0;
+  text-align: center;
+  color: white;
+}/*# sourceMappingURL=all.css.map */

@@ -1,0 +1,260 @@
+// /////variable/////
+// color
+$black: black;
+$dark-gray: #15161d;
+$light-gray: #d1d1d1;
+$white: white;
+$green: #00ffa3;
+$social-bg: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
+
+// /////mixin/////
+@mixin zoom($time) {
+    transition: ease-in-out $time;
+}
+
+// /////全域設定/////
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
+body {
+    line-height: 1.5;
+    font-family: 'Bruno Ace SC', cursive;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+}
+
+
+// /////樣式設定/////
+.container {
+    max-width: 1296px;
+    margin: 0 auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.p160 {
+    padding: 160px 0;
+}
+
+.bg-black {
+    background-color: $black;
+}
+
+.btn {
+    padding: 12px 24px;
+    border-radius: 32px;
+    align-items: center;
+    @include zoom(0.2s);
+}
+
+h2 {
+    font-size: 4em;
+}
+
+// /////nav/////
+nav {
+    padding-top: 40px;
+
+    ul {
+        justify-content: space-between;
+    }
+
+    li {
+        max-width: 306px;
+    }
+
+    a {
+        color: $light-gray;
+        @include zoom(0.2s);
+
+        &:hover {
+            color: $green;
+        }
+    }
+}
+
+// /////header/////
+.header {
+    align-items: center;
+    padding: 72px 0;
+
+    img {
+        margin-right: 24px;
+    }
+
+    &-content {
+        flex-direction: column;
+    }
+
+    p {
+        font-size: 4em;
+        color: $white;
+    }
+
+    h1 {
+        font-size: 8em;
+        color: $green;
+        text-align: right;
+    }
+
+    .btn-white {
+        background-color: $white;
+        color: $black;
+        align-self: end;
+
+        &:hover {
+            background-color: $dark-gray;
+            color: $green;
+        }
+    }
+}
+
+// /////introduction/////
+.bg-img {
+    background-image: url('../../img/background-img.png');
+    background-size: cover;
+    color: $white;
+
+    h2 {
+        margin-bottom: 36px;
+    }
+
+    p {
+        font-size: 1.5em;
+        margin-bottom: 32px;
+    }
+
+    .deco img:nth-child(2) {
+        margin: 0 16px;
+    }
+}
+
+.introduction-text {
+    margin-right: 24px;
+}
+
+.introduction-img img:nth-child(2) {
+    margin: 0 24px;
+}
+
+// /////about/////
+.about {
+    justify-content: space-between;
+    align-items: center;
+
+    &-list {
+        flex-wrap: wrap;
+
+        li {
+            max-width: 306px;
+            border: 1px solid $light-gray;
+            padding: 15px;
+            margin: 12px;
+        }
+
+        h3,
+        span {
+            font-size: 1.25em;
+        }
+    }
+
+    &-content {
+        max-width: 526px;
+
+        h2 {
+            margin-bottom: 36px;
+        }
+
+        p {
+            font-size: 1.5em;
+        }
+    }
+}
+
+// /////contact/////
+.bg-liner {
+    background: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
+    padding: 96px 0;
+
+    .d-flex {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    h2 {
+        color: $white;
+        margin-right: 16px;
+        align-items: center;
+
+        span {
+            font-size: 100px;
+            color: $white;
+        }
+    }
+
+    a {
+        width: 162px;
+        height: 162px;
+        background-image: url('../../img/discord.png');
+        background-size: cover;
+        display: inline-block;
+        font-size: 0;
+        border-radius: 40px;
+        @include zoom(0.5s);
+
+        &:nth-child(2) {
+            background-image: url('../../img/instagram.png');
+            margin: 0 20px;
+        }
+
+        &:nth-child(3) {
+            background-image: url('../../img/message.png');
+        }
+
+        &:hover {
+            box-shadow: 0px 0px 16px 3px rgba(144, 148, 255, 0.90), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        }
+    }
+
+}
+
+// /////project/////
+.project {
+    h2 {
+        max-width: 746px;
+        margin-left: auto;
+        margin-bottom: 16px;
+    }
+
+    &-img {
+        margin-right: 24px;
+    }
+
+    &-card {
+        margin-bottom: 28px;
+    }
+
+    .btn-black {
+        background-color: $black;
+        color: $white;
+        justify-content: start;
+        display: inline-flex;
+        margin-top: 76px;
+
+        &:hover {
+            background-color: $dark-gray;
+            color: $green;
+        }
+    }
+}
+
+// /////footer/////
+footer {
+    padding: 40px 0;
+    text-align: center;
+    color: $white;
+}
