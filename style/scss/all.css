@@ -44,8 +44,8 @@ nav ul {
   justify-content: space-between;
 }
 nav li {
-  max-width: 306px;
   color: #d1d1d1;
+  max-width: 306px;
 }
 nav a {
   color: #d1d1d1;
