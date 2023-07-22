@@ -1,0 +1,28 @@
+.project {
+    h2 {
+        max-width: 746px;
+        margin-left: auto;
+        margin-bottom: 16px;
+    }
+
+    &-img {
+        margin-right: 24px;
+    }
+
+    &-card {
+        margin-bottom: 28px;
+    }
+
+    .btn-black {
+        background-color: $black;
+        color: $white;
+        justify-content: start;
+        display: inline-flex;
+        margin-top: 76px;
+
+        &:hover {
+            background-color: $dark-gray;
+            color: $green;
+        }
+    }
+}

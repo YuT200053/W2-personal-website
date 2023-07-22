@@ -1,0 +1,33 @@
+.about {
+    justify-content: space-between;
+    align-items: center;
+
+    &-list {
+        flex-wrap: wrap;
+
+        li {
+            max-width: 306px;
+            border: 1px solid $light-gray;
+            padding: 15px;
+            margin: 12px;
+            box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.08);
+        }
+
+        h3,
+        span {
+            font-size: 1.25em;
+        }
+    }
+
+    &-content {
+        max-width: 526px;
+
+        h2 {
+            margin-bottom: 36px;
+        }
+
+        p {
+            font-size: 1.5em;
+        }
+    }
+}

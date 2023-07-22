@@ -1,0 +1,26 @@
+.bg-img {
+    background-image: url('../../img/background-img.png');
+    background-size: cover;
+    color: $white;
+
+    h2 {
+        margin-bottom: 36px;
+    }
+
+    p {
+        font-size: 1.5em;
+        margin-bottom: 32px;
+    }
+
+    .deco img:nth-child(2) {
+        margin: 0 16px;
+    }
+}
+
+.introduction-text {
+    margin-right: 24px;
+}
+
+.introduction-img img:nth-child(2) {
+    margin: 0 24px;
+}

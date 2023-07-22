@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
 body {
   line-height: 1.5;
-  font-family: "Bruno Ace SC", cursive;
+  font-family: "Bruno Ace SC", cursive, serif;
 }
 
 a {
@@ -45,6 +45,7 @@ nav ul {
 }
 nav li {
   max-width: 306px;
+  color: #d1d1d1;
 }
 nav a {
   color: #d1d1d1;
@@ -119,6 +120,7 @@ nav a:hover {
   border: 1px solid #d1d1d1;
   padding: 15px;
   margin: 12px;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.08);
 }
 .about-list h3,
 .about-list span {
@@ -151,25 +153,21 @@ nav a:hover {
   font-size: 100px;
   color: white;
 }
-.bg-liner a {
+.bg-liner li {
   width: 162px;
   height: 162px;
-  background-image: url("../../img/discord.png");
-  background-size: cover;
-  display: inline-block;
-  font-size: 0;
   border-radius: 40px;
   transition: ease-in-out 0.5s;
 }
-.bg-liner a:nth-child(2) {
-  background-image: url("../../img/instagram.png");
+.bg-liner li:hover {
+  box-shadow: 0px 0px 16px 3px rgba(144, 148, 255, 0.9), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.bg-liner li:nth-child(2) {
   margin: 0 20px;
 }
-.bg-liner a:nth-child(3) {
-  background-image: url("../../img/message.png");
-}
-.bg-liner a:hover {
-  box-shadow: 0px 0px 16px 3px rgba(144, 148, 255, 0.9), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+.bg-liner img {
+  max-width: 100%;
+  display: inline-block;
 }
 
 .project h2 {

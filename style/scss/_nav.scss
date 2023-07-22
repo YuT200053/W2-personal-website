@@ -1,0 +1,21 @@
+nav {
+    padding-top: 40px;
+
+    ul {
+        justify-content: space-between;
+    }
+
+    li {
+        max-width: 306px;
+        color: $light-gray;
+    }
+
+    a {
+        color: $light-gray;
+        @include zoom(0.2s);
+
+        &:hover {
+            color: $green;
+        }
+    }
+}
